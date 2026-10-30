@@ -61,6 +61,8 @@ as the decimal separator (for example, `66.666666`).
   specify either policy, so both would need confirmation with the business.
 - Prices stay fixed. Fees, taxes, slippage and market-price changes are ignored.
 - Percentages are passed as `20` for 20%, and current/target totals must each be 100%.
+- The calculator generates recommendations for each security independently. It does not
+  check available cash or execute trades.
 
 ## Tests
 

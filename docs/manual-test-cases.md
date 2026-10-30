@@ -84,6 +84,6 @@ These are **not marked as failing test cases**, because the exercise does not de
 
 | Topic | Example / question | Why it matters |
 | --- | --- | --- |
-| **Funding purchases** | 1 000 USD portfolio: AAA (50 / 40 @ 10) produces BUY 10, while BBB (50 / 60 @ 200) produces HOLD 0. Where does the 100 USD for the purchase come from? | The current calculator generates independent recommendations; it does not enforce a cash budget. |
+| **Funding purchases** | 1 000 USD portfolio: AAA (50 / 40 @ 10) produces **BUY 10** (100 USD), while BBB (50 / 60 @ 300) produces **SELL 0,333333** (99,9999 USD). How should the 0,0001 USD difference be handled? | Rounded recommendations may not balance exactly, and the calculator does not check available cash. |
 | **Exact zero variance** | Six-decimal rounding in TC-01 leaves a tiny residual deviation. Is a tolerance allowed, or must the system reach the mathematically exact target? | The phrase “zero target variance” is ambiguous with limited trading precision. |
 | **Actual holdings and execution** | Are fractional shares always supported? Are existing holdings and available cash known? Do fees, price movements, and order rejections matter? | Recommendations are not the same as orders that can actually be executed. |
